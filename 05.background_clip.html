@@ -1,0 +1,27 @@
+<!DOCTYPE htl>
+
+<head>
+<style type="text/css">
+.ground {
+height:300px;
+width:200px;
+background-color:rgba(0,128,0,0.8);
+padding:20px;
+border:5px solid rgba(0,0,0,0.1);/**To see the difference between padding-box and border-box, you need to set a transparent border**/
+background-clip: content-box; /**content-box(covers content), padding-box(up to the start of border), border-box(up to the end of the border), **/
+margin-bottom:20px;
+}
+h1,p {padding:10px;}
+</style>
+</head>
+
+<body>
+
+<div class="ground">
+<h1>Background image</h1>
+<p>The psuedo element allows you to effectively place the background colour on top of the image and use the transparancey to filter the colour onto the background image.</p>
+</div>
+
+
+</body>
+</html>

@@ -1,15 +1,21 @@
 /**backword compatibility for flexbox containers.**/
-.container
-{/**Only use this at targeted divs that are using flexbox**/
+/*.flexbox only divs
+{Only use this at targeted divs that are using flexbox
 display: -webkit-box;
 display: -ms-flexbox;
 display:flex;
 }
+**/
 
 /**This ensures that all elements (and their ::before and ::after pseudo-elements) use border-box**/
 *, *::before, *::after {
     box-sizing: border-box;
     margin:0;/**Both eliminates default browser spacing**/
     padding:0;
+}
+
+//*Set a base font size then use % or em to set font sizes relative to 100%. **/
+html {
+  font-size: 100%; /* Set a base font size */
 }
 

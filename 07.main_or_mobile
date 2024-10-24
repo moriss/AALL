@@ -1,0 +1,51 @@
+Viewport Meta Tag: Make sure the viewport is set correctly. This allows your website to adjust to different screen sizes.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+/* Mobile styles (up to 768px) */
+/* Tablet styles (768px to 1024px) */
+
+
+In the html head
+For mobile and ipad to be the same (within 1024px width)
+<link rel="stylesheet" media="(max-width: 1024px)" href="stylem.css">
+<link rel="stylesheet" media="(min-width: 1025px)" href="style.css">
+
+To separate them all out:
+<link rel="stylesheet" media="(max-width: 640px)" href="stylem.css">
+<link rel="stylesheet" media="(min-width: 641px) and (max-width: 1024px)" href="style-ipad.css">
+<link rel="stylesheet" media="(min-width: 1025px)" href="style.css">
+
+
+
+
+Mobile only
+@media (max-width: 767px) {
+}
+
+ipad only
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+
+BELOW IS FOR NON FLEXBOX LAYOUTS
+Flexible Layout for the Div: Ensure that the central div is responsive. Use percentages or flexible units like vw (viewport width) or rem for its width, rather than fixed pixel values
+.container {
+  width: 80%; /* Adjust this as needed */
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%; /* Widen the div for iPads */
+  }
+}
+
+
+
+
+
+I need to check with chat if this is useful:
+<!--<link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+ <link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+ -->

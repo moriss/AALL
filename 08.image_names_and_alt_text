@@ -1,0 +1,7 @@
+Once images are selected, sized and optimised:
+Write out current image names on a sheet roughly displayed as they are on the website.
+Under current image name, write the new image name underneath it AND the alt tag description of the image. 
+
+Now change all your images to the new name and add the alt tags. 
+
+Now change all the image names in your html and css(for background images)

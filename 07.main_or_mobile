@@ -18,11 +18,11 @@ To separate them all out:
 
 
 
-Mobile only
+/*Mobile only*/
 @media (max-width: 767px) {
 }
 
-ipad only
+/*ipad only*/
 @media (min-width: 768px) and (max-width: 1024px) {
   
 }

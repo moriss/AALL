@@ -1,0 +1,100 @@
+ref: chatgpt 'Organizing Website Font Sizes
+
+The first part to this, apparantly, is a quick and easy way to sent fonts as required across the board using clamp. It also adds a fallback for older browsers.
+
+
+/* Set up 1rem as the default font size, based on the browser's default */
+html {font-size: 100%; /* 1rem = 16px by default */}
+
+h1 {
+    font-size: 1.8rem; /* Fallback for older browsers */
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem); /* Fluid size */
+}
+
+p {
+    font-size: 1rem; /* Fallback for older browsers */
+    font-size: clamp(0.875rem, 2vw + 0.5rem, 1.25rem); /* Fluid size */
+}
+
+a {
+    font-size: 0.95rem; /* Fallback for older browsers */
+    font-size: clamp(0.85rem, 1.5vw + 0.4rem, 1.1rem); /* Fluid size */
+}
+
+small {
+    font-size: 0.8rem; /* Fallback for older browsers */
+    font-size: clamp(0.75rem, 1vw + 0.3rem, 0.9rem); /* Fluid size */
+}
+
+/*Explanations:
+'small' is actualy a css tag for small text. 
+
+
+font-size: clamp(0.875rem, 2vw + 0.5rem, 1.25rem);
+Minimum font size, preferred font size, maxiumum font size
+
+So how does 2vw +0.5rem work?
+Based on the p tag above, 
+You add 0.5rem (1rem is usualy 16px) to the 2% of the viewport width.
+
+Example:
+So with a vw of 100px, two percent is 2px which is obviously too small but you add 0.5 pixels (8px) giving a total of 10 pixels. Now the important thing to remember is if this 10 pixel size falls below the minimum size of 0.875rem, (the first value in the rule), then the size doesn't go below this first value of, (in this case),0.875.
+*/
+
+
+THE TYPOGRAPHY SCALE
+So you start with a base of font-size 100% (The default user's browsr font size)
+You could also use 16px which is often the default user's browser font size)
+
+Now you set a ratio to multiply or divide by to set larger or smaller text relative to the base.
+
+Ratios of 1.2, 1.25 and 1.5 were suggested by chat.
+
+Example using ratio 1.25 (assuming 16px is the base)
+small text = 16/1.25
+medium text = 16
+large text = 16*1.25
+Xlarge text = 16*1.25*1.25
+The answer to the calculations above are to be in rem (route size [16px])
+
+
+
+ANOTHER WAY OF DOING IT.
+CSS variables/custom properties
+:root {
+        --font-size-small:0.875rem
+        --font-size-base: 1rem
+        --font-size-large:1.25rem
+        --font-size-xlarge:1.5rem
+}
+html
+h1 {font-size: var(--font-size-small);}
+
+
+ANOTHER WAY OF DOING IT
+.xlarge{font-size:1.5rem;}You need to create a class for extra large text unlike 'small'
+h1{font-size:1.25rem;}
+p{font-size:1rem;}
+small{font-size:0.785rem;}'small' is actually a css tag
+
+
+
+
+Using media queries to adjust 
+
+
+
+
+Set the html font size to 16 or 100%
+
+html {font-size:16px /**or 100% where you are respecting the users default [as set on his browser] 16px**/
+
+Now use rem (route em) where:
+1rem = 16px or 100%
+2rem = 32px or 200%
+0.5 rem = 8px or 50%
+
+Defining a scale:
+
+
+

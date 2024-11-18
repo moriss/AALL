@@ -1,0 +1,36 @@
+float for images
+
+
+
+<div class="text-with-image">
+    <img src="your-image.jpg" alt="Description" class="float-right" />
+    <p>
+        This is your main text content. It will start aligned at the top with the image on the right, then wrap around the image, and eventually return to a full-width flow once it’s past the bottom of the image.
+    </p>
+</div>
+
+.float-right {
+    float: right;
+    margin: 0 0 1em 1em; /* Adds space around the image */
+    max-width: 40%; /* Adjust width as needed */
+}
+
+
+
+
+
+When you float and image left or right etc to allow text to flow around it, you need to subsequently clear the floating behaviour for element below the image. 
+
+You can do this in two ways (You can also use a pseudo rule but for now, below seems easier. 
+
+This only targets lists with images in them.
+ul:has(img) {
+    overflow: hidden;
+}
+
+or
+
+.text-with-image {
+    display: flow-root;
+}
+

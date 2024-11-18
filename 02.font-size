@@ -6,26 +6,27 @@ The first part to this, apparantly, is a quick and easy way to sent fonts as req
 /* Set up 1rem as the default font size, based on the browser's default */
 html {font-size: 100%; /* 1rem = 16px by default */}
 
-h1 {
-    font-size: 1.8rem; /* Fallback for older browsers */
-    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem); /* Fluid size */
-}
 
-p {
-    font-size: 1rem; /* Fallback for older browsers */
-    font-size: clamp(0.875rem, 2vw + 0.5rem, 1.25rem); /* Fluid size */
-}
 
-a {
-    font-size: 0.95rem; /* Fallback for older browsers */
-    font-size: clamp(0.85rem, 1.5vw + 0.4rem, 1.1rem); /* Fluid size */
-}
+h1 {font-size: 1.8rem; /* Fallback for older browsers */
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem); /* Fluid size */}
+h2 {font-size: 1.5rem; /* Fallback */
+    font-size: clamp(1.3rem, 2.5vw + 1rem, 2rem); /* Responsive*/}
+h3 {font-size: 1.25rem; /* Fallback */
+    font-size: clamp(1.1rem, 2vw + 0.75rem, 1.75rem); /*Responsive*/}
+h4 {font-size: 1.125rem; /* Fallback */
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem); /*Responsive*/}
 
-small {
-    font-size: 0.8rem; /* Fallback for older browsers */
-    font-size: clamp(0.75rem, 1vw + 0.3rem, 0.9rem); /* Fluid size */
-}
 
+p  {font-size: 1rem; /* Fallback for older browsers */
+   font-size: clamp(0.875rem, 2vw + 0.5rem, 1.25rem); /* Fluid */}
+a  {font-size: 0.95rem; /* Fallback for older browsers */
+   font-size: clamp(0.85rem, 1.5vw + 0.4rem, 1.1rem); /* Fluid */}
+small {font-size: 0.8rem; /* Fallback for older browsers */
+      font-size: clamp(0.75rem, 1vw + 0.3rem, 0.9rem); /* Fluid*/}
+      
+      
+      
 /*Explanations:
 'small' is actualy a css tag for small text. 
 

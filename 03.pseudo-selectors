@@ -1,0 +1,12 @@
+pseudo selectors
+
+.parent-element > h1:first-child {color:red;}
+h1 is NOT a div so you need to target the first h1 child like so.
+
+main h1:nth-of-type(2) {color: green;}
+This targets the second h1 tag.
+
+
+or to select the first of a specific element
+
+.parent-element > p:first-of-type {  }

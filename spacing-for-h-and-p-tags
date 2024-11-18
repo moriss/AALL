@@ -1,0 +1,18 @@
+These are recomended setting from chat where you have set margins and padding to zero globally:
+(*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;/**Both eliminates default browser spacing**/
+    padding:0;
+    }
+)
+
+Code starts here!
+/*Spacing for h,p and small tags*/
+h1 {margin-top: 24px;margin-bottom: 16px;}
+h2 {margin-top: 20px;margin-bottom: 14px;}
+h3 {margin-top: 16px;margin-bottom: 12px;}
+p {margin-top: 0;margin-bottom: 16px;line-height: 1.5;}
+small{margin-top: 4px;margin-bottom: 4px; 
+   margin-left: 0; margin-right: 0;line-height: 1.4;}
+
+

@@ -1,0 +1,11 @@
+To make the background of an image transparant in gimp:(Mostly for logos)
+
+Ensure the image is in png format
+
+You now need to add an alpha layer
+Layer>transparancy>Add alpha layer. (If it is grayed out, you may already have an alpha layer)
+
+Select the background either by the fuzzy select tool U , or Select by colour shft o.
+
+Deselect to stop the marching ants Select>none.
+

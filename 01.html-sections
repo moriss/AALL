@@ -1,0 +1,33 @@
+<head>
+  <title></title>
+</head>
+
+<header> 
+  <nav></nav> Might be more than one nav differentiated with tags.
+  h1,logos, site title, search bar
+ </header>
+ 
+ <main>
+   Primary content unique to the webpage. (No headers, footers or sidebars here)
+ </main>
+ 
+ <section>
+   Defines a section (a thematic grouping of content). They may also contain subsections. Ie a services section, testimonials etc.
+ </section>
+ 
+ <article>
+   Blog post, news article, product description etc. 
+ </article>
+ 
+ <aside>
+   Side bars, related links, Adds, quotes etc.
+ </aside>
+ 
+ <footer>
+  copyright, legal info, social links, terms, privacy, footer navigation.
+ </footer>
+ 
+ Above is good for seo and screen readers. 
+ 
+ Please  note, there is also a 'hero' tag. You can read about it in chatgpt Pro dev CSS property guide
+ 

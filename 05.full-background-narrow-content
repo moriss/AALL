@@ -1,0 +1,50 @@
+Full background with narrow content
+
+Some Notes on other properties you can use:
+###
+align-self:auto;, sets the background container to stretch (x axis) across the entire page (where the parent element does the same and/or the parent element is the body which fills the space by default).
+###
+
+
+For now, I would work with option 2
+
+Option 1
+Use th before psuedo element
+Below is taken from chatgpt
+.narrow-content {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.narrow-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background: /* your background color or image */;
+    z-index: -1;
+}
+
+
+Option 2
+<div class="full-width-background">
+    <div class="narrow-content">
+        <!-- Content goes here -->
+    </div>
+</div>
+
+.full-width-background {
+    width: 100vw;
+    background: /* your background color or image */;
+}
+
+.narrow-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+

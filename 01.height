@@ -1,0 +1,3 @@
+To deal with the height, set the html and body to height:100%; this will cover content even when it falls beyond the visible screen and changes to scrolling.
+
+It also cascades down to other child divs, ensuring height is adjusted to cover content as it grows. 

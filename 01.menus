@@ -1,0 +1,27 @@
+SPACE BETWEEN ITEMS
+It's best to use the gap property for creating space between list items.
+
+EG: 
+ul {gap:1rem;}
+Notice how the rule is in the parent tag rather than the list tag itself. (Similar to how flex operates)
+
+
+SELECTING A SPECIFIC LIST ITEM FOR SPECIFIC STYLING.
+
+<li class="red"> KWA </li>
+
+
+Using nth child
+.main-menu-right ul li:nth-child(2) {color:red;}
+
+
+
+Use span if you want to style part of the content in a list item
+
+Directly targeting with a class:
+
+
+<li>Item <span class="red">2</span></li>
+
+
+

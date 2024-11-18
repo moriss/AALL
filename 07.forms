@@ -1,0 +1,18 @@
+forms
+
+This is an example of how you can set the placeholder text within a form to size proprotionately to it. 
+
+You can change the font size value to suit. Ie 4vh or 2 vh et.
+Line height nicely separates the boxes vertically 
+
+.contact-form {flex-grow:1; flex-basis:33.3%; line-height:53px; }
+
+
+input {height:43px; width:280px; }
+
+input::placeholder {font-size:3vh;}
+input {font-size:3vh;}
+
+
+Button
+button {background:rgba(27,108,166,0.5);}

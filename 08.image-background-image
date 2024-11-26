@@ -1,0 +1,26 @@
+Some option for background image
+
+Set the div (containing the bg image) to 100vh 
+
+background-image: url("location");
+
+background-size:cover; Scale the image to fit the width whilst maintaining aspect ratio.
+
+background-position:center; if you need to center the image.
+
+min-height:100vh; Ensure it covers the viewport height if required.
+
+background-repeat:no-repeat  if required
+
+Example
+section.hero {
+width:100%;
+height:100vh;
+
+background-image:url("images/bg_1.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;}
+
+
+

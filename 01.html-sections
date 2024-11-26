@@ -7,12 +7,15 @@
   h1,logos, site title, search bar
  </header>
  
+ 
  <main>
    Primary content unique to the webpage. (No headers, footers or sidebars here)
  </main>
  
+ <div class="content-wrapper"> Is good for wrapping different sections with a div. Ie, you may have a 'main' section next to a 'blog' section,, so the parent should be called generically 'content-wrapper'.
+ 
  <section>
-   Defines a section (a thematic grouping of content). They may also contain subsections. Ie a services section, testimonials etc.
+   Defines a section (a thematic grouping of content). They may also contain subsections. Ie a company services section, testimonials etc.
  </section>
  
  <article>

@@ -1,3 +1,28 @@
+NAMING CONVENTIONS
+
+<nav></nav> if just one group of links
+<nav class=""></nav> If more than one.
+
+For the main nav:
+<nav class="main-nav>
+For social navs
+<nav class="social-nav">
+for call to action navs (shop, donate etc)
+<nav class="cta-links" or action-links or utility links.
+
+POSITION -BASED NAMING
+header-actions Reflects placement and purpose
+or
+right-nav specifies location in the header
+
+OR SEMANTIC SPECIFIC  NAMING
+shop-donate
+or 
+commerce-links
+or
+support-links
+
+
 SPACE BETWEEN ITEMS
 It's best to use the gap property for creating space between list items.
 

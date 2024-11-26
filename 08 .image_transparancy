@@ -9,3 +9,8 @@ Select the background either by the fuzzy select tool U , or Select by colour sh
 
 Deselect to stop the marching ants Select>none.
 
+When exporting, uncheck all options apart from:
+Save colour values from transparant pixels
+
+A deeper explanations of options are found in chatgpt/Elephant site [Search keyphrase] = I've just removed the background of
+

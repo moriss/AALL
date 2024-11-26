@@ -8,7 +8,7 @@ main {flex:2 1 66.6%; }
 Values from right to left:
 Flex bases allows the starting measurement (as a percentage). 
 Flex shrink both set to 1 allows them to shrink proportionately.
-Flox grow controls how much each item will grow relative to others. So main will grow twice as much a .contact-form.
+Flex grow controls how much each item will grow relative to others. So main will grow twice as much a .contact-form.
 
 It's important to use flex bases with accuracy (ie percentages) since using a flex bases of 2 and 1 respectively will not set the sizes relative to the container as you would expect. 
 

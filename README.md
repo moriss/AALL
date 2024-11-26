@@ -4,9 +4,11 @@
 AT: 7th October 24
 You are populating the AALL repo with extremely useful quick guides to putting your web pages together on a static site. This should be the current go-to when putting a site together. 
 
-With above in mind, you are copying the 'anysite' website to improve you mind muscle in getting sites up and running efficiently and in good time. You are going to copy a few so you develop your memory muscle in putting simple structures together without worrying about the detail at this stage.
+With above in mind, you are copying the 'elephant' website on the blue desktop, to improve you mind muscle in getting sites up and running efficiently and in good time. You are going to copy a few so you develop your memory muscle in putting simple structures together without worrying about the detail at this stage.
 
 Website built so far :https://spatialpoint.com/mapinfo-anysite/ 
+
+Make yourself familiar with all the files relating to putting a static site together.
 
 From Before:
 gtcoding is currently the ultimate guide to wordpress templates. You will work on this after you are happy throwing together the static sites.

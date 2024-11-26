@@ -1,0 +1,62 @@
+Positioning an image (or other div) halfway into the div above. This is common for videos.
+
+
+THis is a simple way to move an image halfway into the div above (common for video positioning)
+.video-container {
+height: 230px;
+position:relative; 
+transform: translateY(-50%);}
+
+.video-container img{ height:100%; }//This simply sets the image to full height of its parent div.
+
+So the video container moves up (with the image) half into the div above. 
+By setting the height of 230px for the parent div, the transform: translateY(-50%); knows to move the image's div half of 230px up the way. 
+
+translateY is for up and down and translateX is for left and right. 
+
+
+Another way to do it is to keep the parent div where it is and only move the image. 
+.video-container {
+height: 230px;  
+border:1px solid red; }
+
+.video-container img{ 
+height:100%; 
+position:relative; transform: translateY(-50%);}
+
+Either way doesn't seem to change the position of elements below this parent div and 'wayword' child.
+
+You can read below but it seems more complicated. Chat advised below but I suggested (give or take) doing above [as a theory]
+
+
+
+Older below.
+
+I eventually established with chat that simply doing the following
+.video-container {height: 230px;  display:flex; justify-content:flex-start;}
+
+#video{ height:230px; position:relative; transform: translateY(-50%); }
+
+So the video container is the same height as the image 
+
+
+
+Below is older and perhaps a bit belt and braces.
+
+You create a wrapper for the image (or div) and give the wrapper a height (probably similar to the height of the image (or what the inner div needs to be). This height value is required so that an absolute positioning of -50% for the image/div can be taken from it. By the way, the wrapper for the image/div will follow the same width as its parent element, given that the wrapper is a block level element. 
+
+The wrapper gets a position:relative; and the image or inner div gets a position:absolute; top: -50%; This takes the image/div halfway into the block div above. 
+
+Finaly, you can use flexbox justify-content: center; on the wrapper to have the image/div sit centrally. 
+
+.image-wrapper {height: 230px; position:relative; border:1px solid green; display:flex; justify-content:center;}
+#image_1{ border:3px solid white;height:230px; position:absolute; top:-50%; }
+
+Transform Translate is another method (and perhaps the best method)
+
+transform: translateY(-50%);
+Below is the same code as above, using translate
+
+.image-wrapper {height: 230px; position:relative; border:1px solid green; display:flex; justify-content:center;}
+#image_1{ border:3px solid white;height:230px; position:absolute; transform: translateY(-50%); }
+

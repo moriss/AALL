@@ -1,0 +1,7 @@
+Lists
+
+When creating a simple ul or ol list, use margins to separate the list elements. 
+
+If doing it with flexbox, use gap (but simple lists don't usually require flexbox)
+
+Avoid line height as it can cause confusion. Only use line height for the gap between text lines. So it can be used in a paragraph list element.

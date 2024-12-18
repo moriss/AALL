@@ -1,0 +1,14 @@
+line separators
+
+Using <hr/>
+The height of an hr seems to ignore the div below and moves into it. So, setting it to around 5px and using it as a separater is fine. Any higher then you start to get problems.
+
+You need to place the hr right after the full stop of the last word and very probably give the div below some margin-top.
+
+A div can also be used but is best if you are starting afresh in a new block element. 
+ <div class="separator">
+    <div class="line">
+	line
+	 </div>  
+  </div>
+

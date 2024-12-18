@@ -2,10 +2,21 @@
   <title></title>
 </head>
 
+
 <header> 
-  <nav></nav> Might be more than one nav differentiated with tags.
+  <nav></nav> Might be more than one nav differentiated with class names for styling and clarity:
+  .main-nav
+  .social-nav
+  
+ 
+  
   h1,logos, site title, search bar
+  
  </header>
+ 
+ <hero>
+ For the name, tagline, large image and/or other introductory content.
+ </hero>
  
  
  <main>

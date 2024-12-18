@@ -1,0 +1,31 @@
+BEM (Block-Element-Modifier) Naming:
+Source: chat>CSS List Spacing>keyphrase: Use BEM (Block-Element-Modifier) Naming:
+
+
+
+
+BEM (Block-Element-Modifier) is a widely-used CSS naming convention that keeps your class names clear and related.
+The parent <div> can be treated as the block, and the <ul> (and other elements inside it) can be treated as elements of that block. The way they are linked is via the double underscore '__'
+
+
+<div class="menu">
+  <ul class="menu__list">
+    <li class="menu__item">Item 1</li>
+    <li class="menu__item">Item 2</li>
+  </ul>
+</div>
+
+css
+.menu /**You don't need to prefix a div **/
+ul.menu__list /**But here, You can tell immediately what selector it is.**/
+li.menu__list-item  /**And here!**/
+
+And for targeting list elements via psuedo:
+li.menu__list-item:first-child {font-weight:bold;}
+
+Pay special attention to the double underscore that signifies you are using the BEM naming convention. 
+
+
+Chat suggests that using the element name (ul.menu__list) instead of just .menu__list, avoids uneccessary specifity. However, I find it much easier to locate a div if it is so named in the css. 
+
+Read the chat for more information.

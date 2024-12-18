@@ -7,15 +7,17 @@ height: 230px;
 position:relative; 
 transform: translateY(-50%);}
 
-.video-container img{ height:100%; }//This simply sets the image to full height of its parent div.
+transform:translate(-50%,0);//for both horizontal and verticle
+transform:translateX(-50%); //for the horizontal
+transform:translateY(-50%); //for the vertical
 
 So the video container moves up (with the image) half into the div above. 
 By setting the height of 230px for the parent div, the transform: translateY(-50%); knows to move the image's div half of 230px up the way. 
 
-translateY is for up and down and translateX is for left and right. 
+translateY is for up and down and translateX is for left and right movements.
 
 
-Another way to do it is to keep the parent div where it is and only move the image. 
+Another way to do it is to keep the parent div where it is and only move the image. HOWEVER, IT CREATES PROBLEMS WHEN YOU ADD ANY TEXT BELOW THE IMAGE.THE TEXT STAYS WITH THE CONTAINER SO IS OUT OF POSITION.
 .video-container {
 height: 230px;  
 border:1px solid red; }

@@ -10,3 +10,6 @@ This targets the second h1 tag.
 or to select the first of a specific element
 
 .parent-element > p:first-of-type {  }
+
+selecting the first element in a list
+.footer-address__list li:first-child {}

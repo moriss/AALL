@@ -1,0 +1,17 @@
+Transition
+
+a {
+  color: black; /* Default link color */
+  text-decoration: none; /* Optional: Removes the underline */
+  transition: color 0.3s ease; /* Transition effect for the color property */
+}
+
+a:hover {
+  color: red; /* Change to red on hover */
+}
+
+ease creates a smooth acceleration and deceleration effect.
+
+linear is another option.
+
+Src: chat > CSS List Spacing > "I want to add a transition css effect when hovered over a link to turn it red "

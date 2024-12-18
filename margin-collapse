@@ -1,0 +1,9 @@
+Margin Collapsing
+When vertical margins of adjacent block elements collapse into a single margin, it can cause spacing issues, making elements appear closer than expected or overlap.
+
+Solution:
+Use padding instead of margins on one or both elements.
+Add a border (even if transparent) to separate margins.
+Use a layout technique like Flexbox or Grid, which prevents margin collapsing.
+
+Also: setting a 100vh to the main div above also causes a margin collapse. One solution is to change it from vh to height:auto;

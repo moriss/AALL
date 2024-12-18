@@ -1,0 +1,6 @@
+image and text spacing
+Where image and text are alongside each other and related.
+
+Use margin on the image (or image container) which is best practice, since all images within the div will have the same margin. 
+
+

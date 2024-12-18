@@ -1,0 +1,7 @@
+There is a point to make about margins. 
+
+Where you run into unexpected issues with margin, chat suggested removing default margins with margin:0; then in the same line of code, setting the margins do whatever you want. 
+
+This apparantly gets rid of the default browser margins, whatever they may be. 
+
+Please note that by setting margins and padding to zero at the start of your css, might not work for some element's margin settings, so setting to zero initially (within the rule) is advised. 

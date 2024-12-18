@@ -1,0 +1,11 @@
+aria-label
+
+
+Key sentence at chat>footer Link Naming Conventions :
+'This is an accessibility feature that provides additional context for screen readers...'
+
+<nav aria-label="footer-about-section" class="footer-about-links">
+
+So aria-label is basically for screen readers whilst the class is for css targeting. 
+
+

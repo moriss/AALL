@@ -1,0 +1,4 @@
+Nav issues
+Be aware that navs with no classes can have an unintended styling affect on other navs with classes. 
+
+So make sure every nav you have, has it's own class.  

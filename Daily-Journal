@@ -1,0 +1,37 @@
+##
+This is literally a daily journal of what you have done and your thoughts. A good reference to revise. Use the README.md to keep track of tasks. 
+##
+
+14th january 25.
+Given that you have a better understanding of how php works with blocks of content etc I am going back to the ape site to build more pages (statically) so I can properly implement it in a wordpress scenario.
+
+And the way to convert an html static site into a php I think is to rename index.html to template.php. You can then cut out the relevant content and replace with includes and variables.
+
+So complete the home page statically before continuing with php. 
+
+13th January 25
+So, for php, the template file is what gets displayed and the index.php file decides what content to display using arguments based on the page requested by the user.
+So things like head, sidebar, footer etc are 'hard coded' into the template with 'include'. Other content which is dependant on the page requested is loaded using a variable.
+
+the chat: PHP Sectioning and Includes  
+
+
+
+10th January 2025
+I began questioning chatgpt about the best way forward for me. (Cambio de carrera posible)For some reason, it wrote the title in something like spanish!
+
+Anyway I decided that I don't really know what area to focus on so I decided on micro tasks taking me down a logical path.
+
+In the case of html to wordpress, I now need to begin using php to add head, body and footer 'blocks' to my webpages within htdocs.
+
+9th January 2025
+
+You moved from building static web pages into htdocs with the ape static web page you just copied, albeit the top part of the home page (head). You created a head.php file and used the php 'include' to include it to a home, about and contact page. It worked fine!
+
+You read the htdocs drive file in AAAcoding to familiarise yourself again with using xampp to access your php website. 
+
+Given that your blue laptop lacks memory, you created repos for all your static practice sites. You then cloned the ape site onto your desktop and for this exercise, copied images etc over to the htdocs/ape. Everything seems to be working ok. 
+
+I think the next step is to try and add a main and a footer to the site, or do this for an another site you created with perhaps more content. 
+
+I learned that htdocs is basically a playground for creating sites which mimick a hosting service on the internet. It enables you to use php, databases and the like. 

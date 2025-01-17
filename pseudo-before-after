@@ -1,0 +1,22 @@
+Creates a line below, all the way across the div (less 40 pixels)
+.footer-links {width:100%; position:relative;}
+.footer-links::after {
+content:"";
+position:absolute;/**Required for relative positioning of the psuedo element.**/
+bottom:0;/***Allows for correct positioning**/
+left:0;
+height:2px; 
+background-color:rgba(200,200,200,50%); width:calc(100% - 60px);
+}
+
+
+
+Creates a line above, all the way across the div (less 40 pixels)
+.line {width:100%; position:relative;}
+.line::before {
+content:"";
+position:absolute; top:0 left:0;
+width: calc(100% - 40px);
+height:2px;
+background:rgba(200,200,200,50%);
+}

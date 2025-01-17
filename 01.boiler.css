@@ -10,7 +10,7 @@ display:flex;
 /**This ensures that all elements (and their ::before and ::after pseudo-elements) use border-box**/
 *, *::before, *::after {
     box-sizing: border-box;
-    margin:0;/**Both eliminates default browser spacing**/
+    margin:0;/**Both margin and padding here, eliminates default browser spacing**/
     padding:0;
 }
 
@@ -18,4 +18,6 @@ display:flex;
 html {
   font-size: 100%; /* Set a base font size */
 }
+
+/**Above is boiler plate**/
 

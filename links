@@ -1,0 +1,20 @@
+a:link {color: blue;} /**unvisited**/
+
+a:visited {color: purple;}/**visited**/
+
+a:hover {color: red;} /**when link hovered over**/
+
+a:focus {outline: 2px solid #000;}when link gains focus (e.g., via keyboard navigation or screen reader).
+
+a:active {color: orange;}/**Applies while the link is being clicked or tapped (typically only visible momentarily).
+
+
+
+a:link {color: blue;}
+a:visited {color: purple;}
+a:hover {color: red;}
+a:focus {outline: 2px solid #000;}
+a:active {color: orange;}
+
+
+

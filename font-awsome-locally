@@ -14,8 +14,13 @@ So firstly move the font-awsome downloaded files into your project (same level a
 Go to your html and link the relevant css file.
 I suggest  all.min.css  found in assets_fa/css
 
-You basically display your icon as follows
+You basically display your chosen icon as follows
 <i class="fa fa-phone icon"></i>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+
 You can use the svgs folder to find icons and use the name of the icon as I have done above (phone)
 
 And this is how you target the icon using css.

@@ -1,0 +1,3 @@
+width:calc(100% - 60px);
+
+This moves an element (perhaps a line) across 100% of the width less 60 pixels.

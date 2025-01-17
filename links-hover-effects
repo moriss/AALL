@@ -1,0 +1,7 @@
+Links hover effects
+
+This creates a smooth transition to the colour grey using: transition:1s ease;  giving a 1 second delay in changing to the grey colour. You can use 'linear' instead of 'ease'.
+
+
+.footer-links a:link {text-decoration:none; color:rgba(170,200,88,255); transition:1s ease;}
+.footer-links a:hover {color:grey;}

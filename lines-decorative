@@ -1,0 +1,34 @@
+For decorative lines that stop short (either side) of the bottom border div.
+
+In other words, you can create a bottom border, or bottom border effect to act as a decorative line but you may not want it to span the full width of the div. 
+
+Resource=chat CSS List Spacing >My question: "is there a way to diminish the border-bottom without  affecting the div itself? I want to keep the div as it is with a margin-left of 40px but to the right, have the line stop short of the end of the div."
+
+
+The example below is a div with another div to the right of it set with a flexbox layout. The decorative line you want to create is only for the .footer-links div below. 
+
+One way of doing it:
+.footer-links {
+  position: relative; /* Required for the pseudo-element to position itself relative to this div */
+  margin-left: 40px; /* Retain the div's left margin */
+}
+
+.footer-links::after {
+  content: ""; /* Required to make the pseudo-element render */
+  position: absolute;
+  bottom: 0; /* Align the border at the bottom of the div */
+  left: 0; /* Start the border from the left */
+  width: calc(100% - 40px); /* Adjust the width to stop short by 40px on the right */
+  BEWARE THAT THE LINE SPACES WITHIN THE BRACKETS (100% - 40PX) ARE RELEVANT. 
+  
+  height: 2px; /* Set the height of the border */
+  background-color: black; /* Border color */
+}
+
+
+Alternate Approach
+If you don't want to use ::after, you could apply a gradient background with transparency to simulate the border stopping short, but the pseudo-element is cleaner and more maintainable. Let me know if you'd like to explore that option!
+Ask chat about above.
+
+
+

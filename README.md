@@ -1,8 +1,18 @@
 # AALL
 
-###
+OVER VIEW
+In addition to learning programing in the evening, here I want to be proficient at building web pages and creating fully functional wordpress sites. This is a kind of micro goal that I will review.
+
+
+WHERE I'M AT (Latest on top)
+9th january25
+I have added 'ape' to htdocs and used php to include the header on the home, about and contact page. My next task is to build the main section of each page. (home, about,contact)
+
+
+anysite, elephant and ape you copied are now deleted from blue desktop but remain on github. If you want to work on any one of these, simply clone them back to your desktop. (I have memory space issues on my blue laptop).
+
 AT: 7th October 24
-You are populating the AALL repo with extremely useful quick guides to putting your web pages together on a static site. This should be the current go-to when putting a site together. 
+You are populating the AALL repo with extremely useful quick guides to putting your web pages together. prefix static-site instructions with the number '1'.  Then perhaps 2 for javascript and 3 for php etc. This should be the current go-to when putting a site together. 
 
 With above in mind, you are copying the 'elephant' website on the blue desktop, to improve you mind muscle in getting sites up and running efficiently and in good time. You are going to copy a few so you develop your memory muscle in putting simple structures together without worrying about the detail at this stage.
 

@@ -1,0 +1,102 @@
+Open the image in gimp and decide on the image size(scaling)
+
+large for  desktop: 1920px wide
+medium for tablem: 1024px wide
+mobile 768px wide
+
+The resizing(scaling) will maintain image quality whilst reducing unnecessary pixel date.
+
+Ignore the resolution settings as these are only for physical printing.
+
+Crop the image at this stage if you think it's required. 
+
+We now need to aim for a lossleless or minimally lossy reduction using gimp's "Export As" feature. 
+
+My Note: use jpeg rather than webp for now because you still need to jpeg backup for older browsers. 
+
+NOw it's time to adjust quality settings to 70-85% to balance clarity and size
+Use the 'preview' option as you decide on the best quality level/file size.
+
+The various options when exporting are:
+Save Exif data: 
+check=NO This is date, time and location for camera so this is not required and increases the file size.
+
+Save XMP Data
+Check=NO
+Including a metadata format for advanced information eg:licencsing edits. Only use this if the image is part of a managed system requiring this metadata.
+
+Save Thumbnail
+Check=No
+This saves a  small preview of the image in certain programs. THis is not needed for the web and it slightly increases the file size.
+
+
+Save Colour profile
+Check=No (If colour consistency is not critical)
+Ensures colours look consistent across devices. However, most modern displays handle the colour well without embedding the profile. This optino is important for branding, photograpy and printing. 
+
+NB: If the image is for printing or is to be archived, check all the boxes so you retain all the information you can. 
+
+
+NOW FOR THE ADVANCED SETTINGS:
+You can refer to chat>Image Optimization for Web for a deeper understanding 
+
+Optimize = Yes
+Reduces file size without changing quality
+
+Use Arithmetic coding = IF YOU CHOOSE THIS, THE IMAGE MAY NOT APPEAR ON YOUR WEBPAGE. NO (Some older tools or browsers might not support arithmetic coding).
+
+Progressive = Yes
+
+Smooth = 0
+
+Use Restart Markers = Yes
+
+Interval MCU Rows = Leave as default
+
+Subsampling = 4:2:0 (Default for web)
+
+DCT Method = Integer
+
+
+
+
+ 
+
+
+THE UNSHARP MASK FEATURE IN GIME
+
+filters>enhance>unsharp mask
+
+This is a sharpening tool that enhandces the clarity of an imageby increasing the contrast alons the edges of objects. It doesn't make an image clearer in the traditiona sense but makes details more defined. I've used it before for liz but just kept the default settings. 
+
+Further explanation of it is in chat>Image Optimization for Web
+
+
+
+
+
+
+Making a png image's background transparant
+gimp
+layer > Transparency > Add Alpha Channel (If Add alpha channel is greyed out, it means that it's already got one so just skip this bit. 
+Use the fuzzy select tool or Select by colour tool to click on the background you want to remove.
+
+Press delete to delete the background.
+
+You can use the erasure tool to remove any spots that have been missed.
+
+Then 'Select' then 'None' to deselect the selection. Select is on the top menu third from the left.
+
+See chat's 'image optiiimization for Web chat 
+
+
+
+
+
+For png images:
+
+When exporting, uncheck all options apart from the default:
+Save colour values from transparant pixels
+
+ref: chatgpt/Elephant site [Search keyphrase] = I've just removed the background of
+

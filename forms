@@ -1,18 +1,51 @@
 forms
 
-This is an example of how you can set the placeholder text within a form to size proprotionately to it. 
+This is an example of how you can set the placeholder text within a very simple form to size proprotionately to it. 
 
 You can change the font size value to suit. Ie 4vh or 2 vh et.
-Line height nicely separates the boxes vertically 
-
-.contact-form {flex-grow:1; flex-basis:33.3%; line-height:53px; }
+Line height nicely separates the boxes vertically (but it also equally separates the boxe's titles). 
 
 
+SIMPLE FORM
+HTML
+<form class="header-search__form" action="submit.php" method="post">
+          <textarea id="message" name="message" rows="1" cols="50"  placeholder="Search"></textarea>
+          <button type="submit">&lt; &lt; GO &gt; &gt;</button>
+    </form> 
+#############
+
+CSS 
 input {height:43px; width:280px; }
 
 input::placeholder {font-size:3vh;}
 input {font-size:3vh;}
 
-
 Button
 button {background:rgba(27,108,166,0.5);}
+
+
+
+
+
+
+BELOW IS A LOGIN FORM 
+<form action="#" method="post">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <input type="checkbox" id="remember" name="remember">
+      <label for="remember">Remember Me</label>
+    </div>
+    <div>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+  
+  EXAMPLE CSS
+  

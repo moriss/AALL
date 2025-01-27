@@ -1,0 +1,64 @@
+chat=Ubuntu Memory Cleanup
+
+This checks your available disk space
+df -h
+
+Start with this to remove unecessary package files
+sudo apt-get clean
+
+
+
+Gets rid of packages no longer required
+sudo apt-get autoremove
+
+
+
+
+Check for large files using ncdu
+You first need to install it if you don't have it
+sudo apt install ncdu
+
+Then run it
+sudo ncdu /
+
+It may take a while for ncdu to explore and remove large files.
+
+Type ? to bring up the keyboard shortcuts for various tasks.
+
+You didn't take any action with ncdu at this time.
+
+
+
+
+
+Clear system logs
+sudo journalctl --vacuum-size=100M
+This worked quite well and cleared nearly 1 GB. Be sure you spell it as 2 u's and a capitla M at the end.
+
+
+Remove temporary files
+sudo rm -rf /tmp/*
+
+
+
+NOW IT'S TIME TO UPDATE/UPGRADE
+
+This updates the package list but doesn't update/upgrade anything at this point
+sudo apt-get update
+
+
+
+THis uprades packages but NOT the ubuntu distrobution
+sudo apt-get upgrade
+
+
+
+THis uprades packages but AND the ubuntu distrobution
+sudo apt-get dist-upgrade
+
+
+
+Q;s for chat
+what does apt stand for
+what is ncdu
+

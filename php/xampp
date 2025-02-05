@@ -1,0 +1,60 @@
+Xampp installations
+
+https://www.youtube.com/watch?v=R5CUn5wGQGg
+stopped at 9.07
+
+Xampp will be installed to /opt/lampp
+
+
+When open, go to manage servers and start mysql and proFTPD
+Apache web server is probably already started. If not then start it. 
+
+Now type the following url into browser http://localhost/dashboard/
+This should show the Welcome page of xampp
+
+Then url ttp://localhost/phpmyadmin/
+
+After your done, simply stop all and close the xampp box
+
+OPENING/RUNNING XAMPP
+
+xampp is located here: cd /opt/lampp
+
+So in terminal type cd .. THEN AGAIN cd .. to get to the directory containing opt
+
+go to the opt directly then the lampp directory (cd opt  then cd lampp)
+
+When you list the contents of the directory, this is the one to look for:
+manager-linux-x64.run
+
+To run xampp, type : sudo ./manager-linux-x64.run
+
+This opens xampp again.
+
+ONce xampp is running, you can go to the wordpress file
+
+Only start Apache for php to work
+Start MySQL only if your site uses a database
+ProFTPD is an ftp server for transferring files. So you don't need this. If you want to use it to update files to a remote server then it will need to be configured to do so.
+
+#####################################################################
+BELOW IS FOR INSTALLING XAMPP ONTO A MEMORY STICK.
+https://www.youtube.com/watch?v=KxpTFF9MLAs
+7.44 in
+
+installing xampp onto memory stick
+
+download zip version instead of executable. You may need to click on a 'more downloads' link.
+
+click on the different versions to get to the different download options.
+
+You are looking for a portable version and a zip.
+
+if you click on 'more downloads' again, you are shown a download popularity box.
+
+installers are .exe files as opposed to zip folders
+
+zip folders are better than .exe installers. This is because installers use relative path names (whatever that means)
+
+To open xampp --> xampp control.exe
+

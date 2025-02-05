@@ -1,0 +1,158 @@
+Git is a distributed version control software that enables you to track changes in your projects, manage different versions, and collaborate with others locally on your machine. 
+
+GitHub, on the other hand, is a cloud-based platform built around Git, designed to make it easier to store, share, and manage repositories remotely. 
+
+While Git can function independently on your local machine without GitHub, GitHub enhances Git’s functionality by providing a user-friendly interface, tools for collaboration, and remote storage for your repositories. In short, Git handles the version control, while GitHub provides a platform to store and share your work with others.
+
+Version control is a system that tracks changes to your files over time, allowing you to view, manage, and revert to previous versions when needed. It’s particularly useful for experimenting or recovering from errors, as it provides a reliable way to restore your work to a known, stable state.
+
+Forking is another feature of git that creates a separate copy of a repository, allowing you to experiment or make changes independently without affecting the original project. This is especially useful for trying out new ideas or contributing to someone else’s repository while keeping the original intact and unchanged.
+
+A good way to think of forking is if you have a regular folder on your computer and you want to make changes to it you copy/paste it so the original folder stays intact and you can experiment with the copied version.
+
+Branching is yet another feature
+Branching happens within the same repository (unlike forking) and is used to create isolated environments for features, fixes, or experiments while still being connected to the main project. Unlike forks, branches are easier to merge back into the main repository, making them ideal for managing different lines of development within a single project
+
+
+To work on your GitHub repositories locally with git, you need to set up SSH (Secure Shell) key pairs for secure authentication.
+
+This involves creating two keys: a private key, which you keep secret, and a public key, which is shared with GitHub. When your local machine requests access to GitHub, it uses the public key to initiate a handshake. GitHub responds with an encrypted challenge that only your private key can decode. Once successfully authenticated, you can interact with your repositories, performing actions like adding, committing, and pushing changes securely.
+
+
+
+
+So the next steps are to 1.download Git onto your local machine and 2. Set up a free account on GitHub, the cloud-based platform. 
+
+So the plan is to create a repository on GitHub, [you can create unlimited free repositories], you can then clone it onto your local machine using the Secure Shell (SSH) protocol). (keep reading)
+
+So the next steps are to:
+1:Set up an account with github
+2:Download git to your local machine
+3:Configure SSH authentication, which enables secure communication between your local Git and GitHub, allowing you to clone repositories and push changes seamlessly.
+
+Set up an account with github here:
+https://github.com
+
+
+
+DOWNLOAD GIT
+
+To download Git for Windows, go to the official Git website at https://git-scm.com and click the "Download" button for Windows. Once the installer is downloaded, run it and follow the on-screen instructions to complete the installation, below shows each option in the download process.
+
+GIT INSTALLATION
+##########
+Go to the git download and double click on it. The default location given is fine. 
+
+Read the GNU general public licence LOL!
+
+THE DOWNLOAD STEPS:
+Save it in the default ‘Program files’ unless you want to save the install on a usb stick or a dedicated git folder, where you need to download different versions of git. If unsure then just put it in the default program files
+
+Step It's recommended to go with the default components during the Git installation, as they are suitable for most users.
+
+Step Choose the default start menu folder location if you want to create a shortcut on your desktop. You could also choose not to have a start menu shortcut if you don’t want to make it obvious that you have git.
+
+Step: Which editor would you like git to use
+I Chose nano as the default git editor because I’ve used it before. 
+
+Step: The ‘main’ branch is often referred to as the Master branch but this can be changed to something else of your choice. You can let git decide on the name or you can make your own name here.
+
+Step: Choose as your path: Git from the command line and 3rd party software
+I chose git from the command line and also from 3rd party software
+
+Step: CHoosing the ssh executable:
+Note:
+SSH (Secure Shell) works by allowing your local machine to securely communicate with remote servers, like GitHub, using a pair of cryptographic keys—a private key stored on your machine and a public key added to the remote server.
+
+Setting up SSH is typically done via a command line interface, such as Git Bash or a terminal, where you generate the keys and configure the connection to GitHub.
+
+And when you have completed the git download, you can use git bash to set up ssh. (We show you how to do this later)
+
+
+Step:I chose the Bundled open SSh that comes with git.
+
+which ssl/tls library would you like to use:
+The OpenSSL library: is an open-source software library that provides SSL and TLS protocols for securing communications,
+
+The Native Windows Secure Channel is a built-in Windows feature that handles SSL/TLS encryption for secure communication on Windows systems.
+If you’re using Windows and want a solution that’s tightly integrated with the system and other Windows software, the Native Windows Secure Channel might be a better choice than OpenSSL.
+
+In this case, I have gone with open ssl as I’m not as familiar with windows.
+
+
+Step: Configuring The line ending conversions
+(Note: Configuring line ending conversions is about managing how text files handle line breaks (the end of each line). Different operating systems use different characters to mark the end of a line: Windows uses a combination of carriage return and line feed (CRLF), while Linux and macOS typically use just line feed (LF). If you’re working with Git, especially when collaborating across different operating systems, this setting ensures that line endings are automatically adjusted so that files appear correctly regardless of the platform. It can prevent problems where line breaks look strange or cause errors when files are transferred between systems, and you can choose whether Git should automatically convert line endings to the format appropriate for your operating system.)
+
+I chose’ Checkout window-style, commit unix style line endings’ option [see note above for why].
+
+
+
+Step: which terminal emulator do you want to use with your git bash?
+I chose mintyy because its the default terminal for msys2.
+
+MSYS2 is a software package that provides a collection of Unix-like tools and a shell environment for Windows, enabling you to run Linux-style commands on a Windows system.
+
+Step: What should git pull do by default?
+I chose fast forward or merge. This is the best option I think because:
+[ "fast forward" is ideal if there are no local changes, while "merge" is better if you have local changes that need to be combined with the remote changes, ensuring your work is preserved.]
+
+
+Step: What credential helper should i use?
+I chose git credential manager (only option really)
+A credential helper is a tool that stores and manages your Git credentials (such as usernames and passwords or authentication tokens) securely, so you don't have to enter them every time you interact with a remote repository.
+
+WHich features would you like to enable?
+I chose: enable file system caching
+[File system caching and symbolic links serve different purposes in how your computer handles files. File system caching involves temporarily storing frequently accessed data in memory to speed up access to files, reducing the need to read from the disk each time, thus improving performance. It helps by keeping the most recently or frequently used files readily available. Symbolic links, on the other hand, are pointers or shortcuts to files or directories stored elsewhere on the file system. They allow you to access a file from a different location without duplicating the actual data. While file system caching speeds up access to data by storing it temporarily, symbolic links provide a way to create references to files in multiple places without copying them].
+
+INSTALL
+
+To set up your private and public SSH keys for Git, you'll first need to generate an SSH key pair on your Windows laptop.
+Open Git Bash and use the command ssh-keygen to create the key pair. 
+You’ll be prompted to choose a location to save the keys (you can press Enter to use the default path), and optionally, a passphrase for added security. (It;s a good idea to secure it with a passphrase. You will be asked to type it twice but you won’t see anything being typed.
+This will generate two files: one is the private key (kept secret) and the other is the public key (shared with others). 
+NOTE: You can safely ignore the key fingerprint and randomart image (displayed) for typical Git/GitHub usage, as they are primarily for verifying key authenticity, which isn’t usually needed in this setup process.
+Locate your generated public key. The SSH public key file (usually id_rsa.pub) and copying its contents. This is the key you’ll need to associate with your GitHub account. Once you copy the public key, paste it into GitHub under Settings > SSH and GPG keys > New SSH Key. The private key (typically id_rsa) should remain securely stored in its default location (e.g., C:\Users\<YourUsername>\.ssh\) and should never be shared. The SSH public key is all GitHub needs to authenticate your machine.
+After generating the keys, you need to locate them and copy the public key to ultimately be added to your github account.
+The following command will list the contents of the .ssh directory
+ls ~/.ssh
+
+And the typical output is 
+id_ed25519  id_ed25519.pub
+You now want to open the .pub file to view your public key.
+(Never share the contents of the private key (the first file) in this example above).
+This command shows you your public key
+cat ~/.ssh/id_ed25519.pub
+(The cat string allows the contents of the file to be displayed)
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIT8wZcH6LaWJp7jL89UQs2HVn9swZ/LukgOilTs97Q+ helen@DESKTOP-9UPD0K4
+Above is an example of the public key. THe part AFTER the plus sign is a comment as to the owner of it and should be included.  So the entire public key (including the ssh-ed25519 part, the long key string, and the comment at the end) needs to be on one single line when adding it to GitHub.
+
+Nowyou need to add the public key to your GitHub account (under SSH and GPG keys in your account settings) to allow GitHub to recognize your laptop and grant access for pushing and pulling from repositories securely.  
+Go to your github account or go to github.com and sign up for free.
+Copy the SSH public key to your clipboard. ...
+In the upper-right corner of any page on GitHub, click your profile photo, then click Settings.
+In the "Access" section of the sidebar, click SSH and GPG keys.
+Click New SSH key or Add SSH key.
+You may be prompted to make additional security steps to prove it is you making these changes once you pasted the key into the box.
+After pastimg the key into the box as an authentication key, go back and add the same key for the signing key. See notes below
+Now copy the ssh key for a particular repo of your choice and go back to your local git command line interface and choose a location for your git repo then type
+git clone git@github.com:moriss/elephant.git 
+The ssh key can be found in the gihub repo you are in under code>ssh where it can simply be copied.
+
+
+Extra notes:
+The SSH agent is a background program that securely stores your private SSH keys and automatically uses them to authenticate you when connecting to remote servers, like GitHub, without needing to enter your password each time.
+
+After generating your SSH key pair, your public key is stored in the default directory unless you specified a different location. Typically, on a Windows system, it can be found at C:\Users\<YourUsername>\.ssh\id_rsa.pub. Open this file using a text editor like Notepad to view the key contents. Adding this key to your GitHub account is the next step. To do this, copy the full content of the id_rsa.pub file, go to GitHub, navigate to Settings > SSH and GPG keys, click New SSH Key, paste the copied key into the key field, and save it. This step allows GitHub to recognize and authenticate your computer when connecting via SSH.
+As a side note, Bear in mind when working in the git bash terminal window you can’t use keyboard shortcuts for copy paste etc. 
+
+When using SSH keys with GitHub, you can configure them to serve two different purposes: authentication (proving your identity when you connect to a remote server) and commit signing (verifying that commits you make to a repository come from you). If you want to use the same SSH key for both of these purposes, you'll need to upload it to GitHub twice—once for authentication and once for commit signing. This is because GitHub treats the two uses separately and requires explicit configuration for both. By uploading the same key for both tasks, you streamline the process while maintaining security and integrity for your interactions with GitHub.
+
+A GPG key (GNU Privacy Guard key) is a cryptographic key used for signing and encrypting data to ensure its authenticity and confidentiality. GPG is often used for signing commits in Git, providing a way to verify that a commit was indeed made by the specified author. It works similarly to SSH keys, but instead of just authenticating connections, it allows you to sign your commits or tags to prove that you are the one who made them. GPG keys are more commonly used for verifying commit authorship in open-source projects and ensuring that the code hasn't been tampered with.
+ 
+#############
+
+The git tutorial
+https://www.youtube.com/watch?v=NcoBAfJ6l2Q
+

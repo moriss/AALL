@@ -1,0 +1,35 @@
+template.php
+Link values:
+<div><a href="index.php?page=home">Home</a></div>
+<div><a href="index.php?page=catalogue">Catalogue</a></div>
+Links direct users to index.php for everything then index.php guide them to the correct content depending on the page value. page=home etc
+
+<div class="main">
+    <?php include $content;?>
+    </div>
+This is where the content goes
+    
+    
+index.php
+This houses most of the logic
+<?php
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];  // If 'page' is in the URL, use its value
+} else {
+    $page = 'home';  // If 'page' is not in the URL, set it to 'home'
+}
+
+$allowed_pages = ['home', 'catalogue']; 
+
+if (!in_array($page, $allowed_pages)) { //tests if $page value is NOT in $allowed_pages. Returning 'true', returns a 404.
+    $page = '404';  // If the page is not allowed, set it to '404'
+}
+
+$content = $page . '.php'; //The period (string concatination operator), creates a string that represents the name of the file being requested. ie home.php or catalogue.php. 
+include 'template.php';//This includes the template.php file inside index.php. So the value of page replaces the period. 
+?>
+
+
+content names
+home.php
+catalogue.php

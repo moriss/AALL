@@ -1,6 +1,6 @@
 Open the image in gimp 
 
-Convert images if using for the web. This will ensure consistent colours across devices. Keep the orignial profile if you want a physicle print version.
+'Convert' images (as offered) if using for the web. This will ensure consistent colours across devices. Keep the orignial profile if you want a physicle print version.
 
 and decide on the image size(scaling)
 
@@ -11,6 +11,10 @@ mobile 768px wide
 The resizing(scaling) will maintain image quality whilst reducing unnecessary pixel date.
 
 Ignore the resolution settings as these are only for physical printing.
+
+Choices for interpolation should be:
+Linear for web. 
+Although you should choose Cubic or lohalo for hight quality images.
 
 Crop the image at this stage if you think it's required. 
 
@@ -47,7 +51,7 @@ NB: If the image is for printing or is to be archived, check all the boxes so yo
 
 
 NOW FOR THE ADVANCED SETTINGS:
-You can refer to chat>Image Optimization for Web for a deeper understanding 
+(You can refer to chat>Image Optimization for Web for a deeper understanding)
 
 Optimize = Yes
 Reduces file size without changing quality
@@ -62,7 +66,7 @@ Use Restart Markers = Yes
 
 Interval MCU Rows = Leave as default
 
-Subsampling = 4:2:0 (Default for web)
+Subsampling = 4:2:0 chroma quartered is best for web.
 
 DCT Method = Integer
 

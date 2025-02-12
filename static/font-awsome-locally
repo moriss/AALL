@@ -2,17 +2,32 @@ Working with fontawsome icons locally
 
 Important! You need to clear your browser's cache each time you test anything. You didn't do this to start with which gave you misleading results.
 
-This is primarily to use the fontawsome icons in your web project downloaded into your web folder.
+This is primarily to use the fontawsome icons in your web project downloaded into your web folder, or just using the all.min.css within the download for font icons.
+
+February 25 notes:
+So you got yourself into a bit of a tiz. The hamurger icon, you require the webfonts folder in addition to all.min.css.
+
+You just download the free version from the https://fontawesome.com/download website. Its the webfonts option (rather than for desktop) that you should choose. 
+ONce downloaded, just copy over the all.min.css and put it in a folder called css and paste over the webfonts folder so that they are positioned correctly relative to one another. 
+All these worked for the hamburger font icon:
+<i class="fa fa-bars"> </i>
+<i class="fas fa-bars"> </i>
+<i class="fa-solid fa-bars"> </i>
 
 
 
 QUICK SETUP	
 @@@
 Grabbing the font awsome files.
-So firstly move the font-awsome downloaded files into your project (same level as your html) and rename the file something easy like assets_fa.
+So firstly move the required font-awsome downloaded files into your project (same level as your html) and rename the file something easy like assets_fa.
+
+You already have these font awsome files in the memory stick in your bag /fontawsome/... 
+
+To avoid redundancy, only move over what is required. IE: all.min.css and webfonts. You may not require anything else ie images. (Font based icons are rendered through css and don't require images to be present. ie svg images. 
+)
 
 Go to your html and link the relevant css file.
-I suggest  all.min.css  found in assets_fa/css
+I suggest  all.min.css  found in css
 
 You basically display your chosen icon as follows
 <i class="fa fa-phone icon"></i>
@@ -20,6 +35,7 @@ You basically display your chosen icon as follows
 <i class="fab fa-twitter"></i>
 <i class="fab fa-instagram"></i>
 <i class="fab fa-youtube"></i>
+
 
 You can use the svgs folder to find icons and use the name of the icon as I have done above (phone)
 

@@ -4,7 +4,7 @@
 
 
 <header> 
-The header is for top level elements such as a narrow bar at the very top, a main nav bar, logo and perhaps also the hero section if these are all entry level contents.
+The header is for top level elements such as a narrow bar at the very top, a main nav bar, logo and perhaps also the hero section if it falls within entry level contents.
 
   <nav></nav> SEE 01.NAVS FOR A LIST OF CONVENTIONAL NAV NAMING OPTIONS
 
@@ -22,22 +22,37 @@ Please note, the hero section is not always within the header section. It can al
 
  
  <main>
-   Primary content unique to the webpage. (No headers, footers or sidebars here)
+   Primary content unique to the webpage. (No headers, footers or sidebars(if not part of the primary content.))
  </main>
+
+
  
- <div class="content-wrapper"> Is good for wrapping different sections with a div. Ie, you may have a 'main' section next to a 'blog' section,, so the parent should be called generically 'content-wrapper'.
+ <div class="content-wrapper"> Is good for wrapping different sections with a div. Ie, you may have a 'main' section next to a 'blog' section,, so the parent should be called generically 'content-wrapper'. Typically, such a wrapper contains all the other divs of a webpage.
+</div>
+
+
+
  
  <section>
    Defines a section (a thematic grouping of content). They may also contain subsections. Ie a company services section, testimonials etc.
  </section>
+
+
+
  
  <article>
    Blog post, news article, product description etc. 
  </article>
+
+
+
  
  <aside>
    Side bars, related links, Adds, quotes etc.
  </aside>
+
+
+
  
  <footer>
   copyright, legal info, social links, terms, privacy, footer navigation.

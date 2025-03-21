@@ -2,21 +2,32 @@
   <title></title>
 </head>
 
+<div class="wrapper"> Is good for wrapping different sections with a div. Ie, you may have a 'main' section next to a 'blog' section,, so the parent should be called generically 'content-wrapper'. Typically, such a wrapper contains all the other divs of a webpage.
+</div>
+
+
+
+
 
 <header> 
-The header is for top level elements such as a narrow bar at the very top, a main nav bar, logo and perhaps also the hero section if it falls within entry level contents.
+The header is for top level elements such as:
+A narrow bar at the very top, .header-top or .header.bar 
+A main nav bar, .header-main or .header.nav 
+A company logo
+Hero section (if it falls within entry level contents).
 
   <nav></nav> SEE 01.NAVS FOR A LIST OF CONVENTIONAL NAV NAMING OPTIONS
 
-h1,logos, site title, search bar
-  
+So the items here are likely to be h1 tags, logos, site title, search bar  
  
  
  <hero>
  For the name, tagline, large image and/or other introductory content.
  </hero>
  </header>
-Please note, the hero section is not always within the header section. It can also be placed in the <main> section
+Please note, the hero section is not always within the header section. It can also be placed in the main section.
+
+
 
 
 
@@ -27,11 +38,7 @@ Please note, the hero section is not always within the header section. It can al
 
 
  
- <div class="content-wrapper"> Is good for wrapping different sections with a div. Ie, you may have a 'main' section next to a 'blog' section,, so the parent should be called generically 'content-wrapper'. Typically, such a wrapper contains all the other divs of a webpage.
-</div>
-
-
-
+ 
  
  <section>
    Defines a section (a thematic grouping of content). They may also contain subsections. Ie a company services section, testimonials etc.

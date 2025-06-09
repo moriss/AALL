@@ -1,0 +1,7 @@
+Starting & Stopping points for different sections of the website.
+
+Header
+<header>
+</header>
+
+

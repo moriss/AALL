@@ -1,8 +1,8 @@
 Working with fontawsome icons locally
 
-Important! You need to clear your browser's cache each time you test anything. You didn't do this to start with which gave you misleading results.
+Important! You may need to clear your browser's cache each time you test anything. You didn't do this to start with which gave you misleading results.
 
-This is primarily to use the fontawsome icons in your web project downloaded into your web folder, or just using the all.min.css within the download for font icons.
+This is primarily to use the fontawsome icons in your web project downloaded into your web folder, or just using the all.min.css with the webfonts folder (or other folders), within the download for font icons.
 
 February 25 notes:
 So you got yourself into a bit of a tiz. The hamurger icon, you require the webfonts folder in addition to all.min.css.

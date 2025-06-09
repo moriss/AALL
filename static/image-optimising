@@ -1,9 +1,17 @@
 Open the image in gimp 
 
+CONVERT = YES
+large for  desktop: 1920px wide
+medium for tablem: 1024px wide
+mobile 768px wide
+
 'Convert' images (as offered) if using for the web. This will ensure consistent colours across devices. Keep the orignial profile if you want a physicle print version.
 
 and decide on the image size(scaling)
 
+
+
+IMAGE SCALING:
 large for  desktop: 1920px wide
 medium for tablem: 1024px wide
 mobile 768px wide
@@ -50,6 +58,8 @@ Ensures colours look consistent across devices. However, most modern displays ha
 NB: If the image is for printing or is to be archived, check all the boxes so you retain all the information you can. 
 
 
+
+
 NOW FOR THE ADVANCED SETTINGS:
 (You can refer to chat>Image Optimization for Web for a deeper understanding)
 
@@ -79,21 +89,22 @@ FOR PNG IMAGES
 When exporting:
 Interlacing Adam7 = Yes for web
 
-Save backgroun colour = No
+Save background colour = No
 
-Save Gamma = No for web
+Save Gamma =             No (for web)
 
-Save layer offset. = No  unless you want to re-open the exported image for further editing.
+Save layer offset. =.    No  unless you want to re-open the exported image for further editing.
 
-Save Resolution = No  (This saves dots per inch information for printing)
+Save Resolution =       No  (This saves dots per inch information for printing)
 
-Save Creation time = No unless you need metadata for tracking purposes.
+Save Creation time =    No unless you need metadata for tracking purposes.
 
 
-Save Comment = No Adds a text note in the png file. (Unless you need comments)
+Save Comment =         No Adds a text note in the png file. (Unless you need comments)
 
 Save colour values from transparant pixels
-= No  Reduces file size. Only useful if you need to recover colours in transparant areas later. 
+                     = No  Reduces file size. 
+Only useful if you need to recover colours in transparant areas later. 
 
 Automatic pixel format 
 General web use = 8bpc RGB
@@ -104,13 +115,13 @@ For higher quality (not for web) = 16bpc.
 Compression level = 6, otherwise 0
 This determines how much the png is compressed. (affects file size but not quality) 9 is maximum compression which gives a smaller file with slower export.
 
-Exif data = No  Stores camera metadata
+Exif data =        No  Stores camera metadata
 
-xmp date = No Saves extra metadata, often used for image rights and descriptions.
+xmp date =         No Saves extra metadata, often used for image rights and descriptions.
 
-iptc data = No  Stores metadata about copyright, author, location, and captions.Not needed. Saves space.
+iptc data =        No  Stores metadata about copyright, author, location, and captions.Not needed. Saves space.
 
-thumbnail = No  (reduces file size, modern software generates its own thumbnails).
+thumbnail =       No  (reduces file size, modern software generates its own thumbnails).
 
 colour profile = Yes  Embeds a color profile (e.g., sRGB) to ensure color consistency across devices.
 

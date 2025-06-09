@@ -1,6 +1,33 @@
 ref: chatgpt 'Organizing Website Font Sizes
 
-The first part to this, apparantly, is a quick and easy way to sent fonts as required across the board using clamp. It also adds a fallback for older browsers.
+3rd April 25
+Chat suggest this for pro web developers which deals with issues using clamp (below)
+
+html { font-size: 16px; }
+Or
+html {font-size: 100%;} <!-- this is better I think. 
+Using 100% is better for accessibility and user preference settings, while 16px ensures consistency, but 100% is generally preferred to avoid issues with users who adjust their default font size. - - >
+
+h1 { font-size: 2.5rem; }  
+h2 { font-size: 2rem; }  
+h3 { font-size: 1.5rem; }  
+p, a { font-size: 1rem; }  
+small { font-size: 0.875rem; }  
+
+@media (max-width: 768px) {  
+  h1 { font-size: 2rem; }  
+  h2 { font-size: 1.75rem; }  
+  h3 { font-size: 1.25rem; }  
+  p, a { font-size: 0.9375rem; }  
+  small { font-size: 0.8rem; }  
+}
+
+
+
+
+
+
+The first part to this, apparently, is a quick and easy way to set fonts as required across the board using clamp. It also adds a fallback for older browsers.
 
 
 /* Set up 1rem as the default font size, based on the browser's default */
@@ -28,15 +55,15 @@ small {font-size: 0.8rem; /* Fallback for older browsers */
       
       
 /*Explanations:
-'small' is actualy a css tag for small text. 
+'small' is actually a css tag for small text. 
 
 
 font-size: clamp(0.875rem, 2vw + 0.5rem, 1.25rem);
-Minimum font size, preferred font size, maxiumum font size
+Minimum font size, preferred font size, maximum font size
 
 So how does 2vw +0.5rem work?
 Based on the p tag above, 
-You add 0.5rem (1rem is usualy 16px) to the 2% of the viewport width.
+You add 0.5rem (1rem is usually 16px) to the 2% of the viewport width.
 
 Example:
 So with a vw of 100px, two percent is 2px which is obviously too small but you add 0.5 pixels (8px) giving a total of 10 pixels. Now the important thing to remember is if this 10 pixel size falls below the minimum size of 0.875rem, (the first value in the rule), then the size doesn't go below this first value of, (in this case),0.875.

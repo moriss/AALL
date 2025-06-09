@@ -25,6 +25,19 @@ button {background:rgba(27,108,166,0.5);}
 
 
 
+********************
+Styling a <select> box
+select.widget-box-appointment {
+appearance:none; <!--Gets rid of default styling so you can style it your way-->
+width: 90%; <!--Sizes the box 90% of it's containing div -->
+font-size:1rem; <!--Sets the size of the inner text -->
+border:1px solid #777; 
+border-radius:1%; 
+padding:15px;}
+
+<form> <select class="widget-box-appointment"> <option> Get connected </option> <option> option 2 </option> </select> </form>
+********************
+
 
 
 

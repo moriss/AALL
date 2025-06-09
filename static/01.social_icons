@@ -1,0 +1,54 @@
+Social icons
+
+Instructions for acquiring icons are in the font awesome files in this folder. 
+
+
+Icon spacing ideas
+Use display:flex; gap:10px; on the parent to create spacing between the icons. 
+
+Displaying social icons on the html page:
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin"></i>
+
+Other Icons
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin"></i>
+
+
+Targeting with css
+.fab.fa-facebook {}
+.fab.fa-instagram {}
+.fab.fa-linkedin {}
+
+
+
+You can style Font Awesome icons using background-color, color (font color), font-size, padding, margin, text-align, border-radius, box-shadow, and transform (for scaling or rotating) to customize their appearance
+
+
+
+
+Other ways to target groups of social icons:
+THE CSS
+.social-icons {  
+  display: flex;  
+  gap: 10px;  
+}  
+
+.social-icons i {  
+  font-size: 1.5rem;  
+  color: #333;  
+  transition: color 0.3s ease;  
+}  
+
+.social-icons i:hover {  
+  color: #007bff; /* Change color on hover */  
+}  
+
+THE HTML
+<div class="social-icons">  
+  <i class="fab fa-facebook"></i>  
+  <i class="fab fa-instagram"></i>  
+  <i class="fab fa-linkedin"></i>  
+</div>  
+
